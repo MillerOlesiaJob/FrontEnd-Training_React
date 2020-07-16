@@ -1,0 +1,31 @@
+.wrap-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  background-color: rgba(230, 245, 230, .7);
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  border: 2px solid lightgreen;
+  background-color: white;
+  border-radius: 5px;
+  width: 400px;
+  height: 300px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  &-title {
+    font-size: 26px;
+    font-weight: bold;
+  }
+}

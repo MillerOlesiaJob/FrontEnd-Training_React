@@ -1,0 +1,47 @@
+.categories-block {
+
+  &__title {
+
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    &:hover {
+      color: red;
+    }
+  }
+}
+
+.title {
+  &__warning {
+    color: red;
+    opacity: 0;
+    animation: message 2s forwards;
+  }
+}
+
+@keyframes message {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.categories-item {
+
+  &__check {
+    position: relative;
+
+    &:checked + label {
+      color: grey;
+    }
+
+  }
+
+  &__title {
+
+  }
+}

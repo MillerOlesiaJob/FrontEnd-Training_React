@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FrontEndTraining-ReactApp/static/css/main.bcefd9e4.chunk.css",
+    "main.js": "/FrontEndTraining-ReactApp/static/js/main.2e8ee88c.chunk.js",
+    "main.js.map": "/FrontEndTraining-ReactApp/static/js/main.2e8ee88c.chunk.js.map",
+    "runtime-main.js": "/FrontEndTraining-ReactApp/static/js/runtime-main.b9bd5ca4.js",
+    "runtime-main.js.map": "/FrontEndTraining-ReactApp/static/js/runtime-main.b9bd5ca4.js.map",
+    "static/js/2.bbe16808.chunk.js": "/FrontEndTraining-ReactApp/static/js/2.bbe16808.chunk.js",
+    "static/js/2.bbe16808.chunk.js.map": "/FrontEndTraining-ReactApp/static/js/2.bbe16808.chunk.js.map",
+    "index.html": "/FrontEndTraining-ReactApp/index.html",
+    "precache-manifest.6c75b4daab4b3ad27c96258e3368ab47.js": "/FrontEndTraining-ReactApp/precache-manifest.6c75b4daab4b3ad27c96258e3368ab47.js",
+    "service-worker.js": "/FrontEndTraining-ReactApp/service-worker.js",
+    "static/css/main.bcefd9e4.chunk.css.map": "/FrontEndTraining-ReactApp/static/css/main.bcefd9e4.chunk.css.map",
+    "static/js/2.bbe16808.chunk.js.LICENSE.txt": "/FrontEndTraining-ReactApp/static/js/2.bbe16808.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9bd5ca4.js",
+    "static/js/2.bbe16808.chunk.js",
+    "static/css/main.bcefd9e4.chunk.css",
+    "static/js/main.2e8ee88c.chunk.js"
+  ]
+}
