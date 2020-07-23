@@ -6,7 +6,7 @@ import Answer from "../Answer/Answer";
 const Question = (props) => {
   const { questions, setQuestionsOver } = props;
   const [usedQuestions, setUsedQuestions] = useState([]);
-console.log(usedQuestions)
+console.log(questions)
   // const [randomIndex, setRandomIndex] = useState(0);
   const [isShowQuestion, setShowQuestion] = useState(false);
   const [isShowAnswer, setShowAnswer] = useState(false);
