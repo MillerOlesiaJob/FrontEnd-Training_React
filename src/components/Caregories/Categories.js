@@ -3,11 +3,12 @@ import './Categories.scss'
 import {useDispatch, useSelector} from "react-redux";
 import {checkCategory, unCheckCategory} from "../../store/actions";
 
-const Categories = () => {
+const Categories = ({setDisabled}) => {
   const categoriesList = useSelector(state => state.categories);
   const dispatch = useDispatch();
 
   const handleChange = ({target}) => {
+    setDisabled(false);
     !target.checked ? dispatch(unCheckCategory(target.id)) : dispatch(checkCategory(target.id));
   };
 

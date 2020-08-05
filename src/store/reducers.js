@@ -1,4 +1,4 @@
-import {CATEGORY_CHECK, CATEGORY_UNCHECK} from "./types";
+import {CATEGORY_CHECK, CATEGORY_UNCHECK, CATEGORY_UNCHECK_ALL} from "./types";
 
 const initialCategoryState = [
   {
@@ -781,6 +781,11 @@ export const categoryReducer = (state = initialCategoryState, action) => {
         }
         return {...item}
       });
+    case CATEGORY_UNCHECK_ALL:
+      return state.map(item => {
+        item.checked = false;
+        return {...item}
+      });
     default: return state;
   }
 };
@@ -789,6 +794,6 @@ export const dataBase = (state = initialQuestionBase, action) => {
   return state;
 };
 
-export const selectedQuestions = (state = initialSelectedQuestions, action) => {
-  return [...state, action.payload];
-};
+// export const selectedQuestions = (state = initialSelectedQuestions, action) => {
+//   return action.payload;
+// };

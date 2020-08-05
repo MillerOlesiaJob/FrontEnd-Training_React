@@ -3,7 +3,6 @@ import './Answer.scss';
 
 const Answer = (props) => {
   const {question} = props;
-  console.log(question);
 
   const getQuestion = () => {
     const answerType = typeof question.answer;

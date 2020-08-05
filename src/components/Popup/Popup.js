@@ -1,28 +1,19 @@
 import React from "react";
 import './Popup.scss';
 const Popup = (props) => {
-  const {setShowPopup, setNewCategories} = props;
+  const {onSubmit, onCancel, setShowPopup} = props;
 
-  const handleNewCategories = (pro) => {
-    console.log('new');
-    setNewCategories(true);
-    setShowPopup(false);
+  const handleClosePopup = () => {
+    setShowPopup(false)
   };
-
-  const handleOldCategories = () => {
-    console.log('old');
-    setNewCategories(false);
-    setShowPopup(false);
-  };
-
 
   return (
     <div className='wrap-popup '>
       <div className='popup'>
         <p className='popup-title'>Выбрать новые категории?</p>
-        <div className='btn-group'>
-          <button className='popup-btn button' onClick={handleNewCategories}>ДА</button>
-          <button className='popup-btn button' onClick={handleOldCategories}>НЕТ</button>
+        <div className='btn-group' onClick={handleClosePopup}>
+          <button className='popup-btn button' onClick={onCancel}>ДА</button>
+          <button className='popup-btn button' onClick={onSubmit}>НЕТ</button>
         </div>
       </div>
     </div>

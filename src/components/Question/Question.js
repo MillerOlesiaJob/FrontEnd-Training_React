@@ -2,19 +2,22 @@ import React, {useState} from "react";
 import './Question.scss';
 import Button from "../Button/Button";
 import Answer from "../Answer/Answer";
+import {useSelector} from "react-redux";
 
 const Question = (props) => {
   const { questions, setQuestionsOver } = props;
   const [usedQuestions, setUsedQuestions] = useState([]);
-console.log(questions)
-  // const [randomIndex, setRandomIndex] = useState(0);
   const [isShowQuestion, setShowQuestion] = useState(false);
   const [isShowAnswer, setShowAnswer] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [isDisabledBtn, setDisabledBtn] = useState(false);
+  const [isShowAnswerBtn, setAnswerShowBtn] = useState(false);
 
   const showRandomQuestion = () => {
-    console.log(usedQuestions.length);
-    console.log(questions.length)
+    setDisabledBtn(false);
+    setAnswerShowBtn(false);
+    setShowAnswer(false);
+
     if (usedQuestions.length === questions.length) {
       handleEndQuiz();
       return;
@@ -35,13 +38,22 @@ console.log(questions)
     }
   };
 
+  const handleEndQuiz = () => {
+    setQuestionsOver(true);
+  };
+
   const handleShowAnswer = () => {
     setShowAnswer(true);
   };
 
-  const handleEndQuiz = () => {
-    setQuestionsOver(true);
-    console.log('END');
+  const handleKnow = () => {
+    setAnswerShowBtn(true);
+    setDisabledBtn(true);
+  };
+
+  const handleNotKnow = () => {
+    setDisabledBtn(true);
+    handleShowAnswer();
   };
 
   return (
@@ -52,12 +64,17 @@ console.log(questions)
            title='RANDOM QUESTION'
            className='button button--random'
            onClick={showRandomQuestion}
+           disabled={isDisabledBtn}
          />
           {isShowQuestion &&
           <div className="questions-text-block">
             <h2 id="questionTitle" className='question__title title'>{currentQuestion.title}</h2>
             <p id="questionText" className="question__text text">{currentQuestion.text}</p>
-            <h2 className='title' onClick={handleShowAnswer}>Ответ</h2>
+            <div className='buttons-group'>
+              <button className='button button--correct' onClick={handleKnow} disabled={isDisabledBtn}>Это я знаю!</button>
+              <button className='button button--wrong' onClick={handleNotKnow} disabled={isDisabledBtn}>Не знаю &#9785;</button>
+              {isShowAnswerBtn && <button className='button button--answer' onClick={handleShowAnswer}>Молодец! Посмотри ответ, чтоб проверить себя</button>}
+            </div>
           </div>
           }
         </div>
