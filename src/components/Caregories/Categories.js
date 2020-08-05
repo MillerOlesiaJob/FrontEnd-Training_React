@@ -4,8 +4,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {checkCategory, unCheckCategory} from "../../store/actions";
 
 const Categories = ({setDisabled}) => {
-  const categoriesList = useSelector(state => state.categories);
   const dispatch = useDispatch();
+  const categoriesList = useSelector(state => state.categories);
 
   const handleChange = ({target}) => {
     setDisabled(false);

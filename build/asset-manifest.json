@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/FrontEndTraining-ReactApp/static/css/main.bcefd9e4.chunk.css",
-    "main.js": "/FrontEndTraining-ReactApp/static/js/main.2e8ee88c.chunk.js",
-    "main.js.map": "/FrontEndTraining-ReactApp/static/js/main.2e8ee88c.chunk.js.map",
-    "runtime-main.js": "/FrontEndTraining-ReactApp/static/js/runtime-main.b9bd5ca4.js",
-    "runtime-main.js.map": "/FrontEndTraining-ReactApp/static/js/runtime-main.b9bd5ca4.js.map",
-    "static/js/2.bbe16808.chunk.js": "/FrontEndTraining-ReactApp/static/js/2.bbe16808.chunk.js",
-    "static/js/2.bbe16808.chunk.js.map": "/FrontEndTraining-ReactApp/static/js/2.bbe16808.chunk.js.map",
-    "index.html": "/FrontEndTraining-ReactApp/index.html",
-    "precache-manifest.6c75b4daab4b3ad27c96258e3368ab47.js": "/FrontEndTraining-ReactApp/precache-manifest.6c75b4daab4b3ad27c96258e3368ab47.js",
-    "service-worker.js": "/FrontEndTraining-ReactApp/service-worker.js",
-    "static/css/main.bcefd9e4.chunk.css.map": "/FrontEndTraining-ReactApp/static/css/main.bcefd9e4.chunk.css.map",
-    "static/js/2.bbe16808.chunk.js.LICENSE.txt": "/FrontEndTraining-ReactApp/static/js/2.bbe16808.chunk.js.LICENSE.txt"
+    "main.css": "/FrontEnd-Training_React/static/css/main.df477f49.chunk.css",
+    "main.js": "/FrontEnd-Training_React/static/js/main.d9d05d9e.chunk.js",
+    "main.js.map": "/FrontEnd-Training_React/static/js/main.d9d05d9e.chunk.js.map",
+    "runtime-main.js": "/FrontEnd-Training_React/static/js/runtime-main.96d23b81.js",
+    "runtime-main.js.map": "/FrontEnd-Training_React/static/js/runtime-main.96d23b81.js.map",
+    "static/js/2.2b1f54c3.chunk.js": "/FrontEnd-Training_React/static/js/2.2b1f54c3.chunk.js",
+    "static/js/2.2b1f54c3.chunk.js.map": "/FrontEnd-Training_React/static/js/2.2b1f54c3.chunk.js.map",
+    "index.html": "/FrontEnd-Training_React/index.html",
+    "precache-manifest.7fa089de3295dd93c56d75fe1936c813.js": "/FrontEnd-Training_React/precache-manifest.7fa089de3295dd93c56d75fe1936c813.js",
+    "service-worker.js": "/FrontEnd-Training_React/service-worker.js",
+    "static/css/main.df477f49.chunk.css.map": "/FrontEnd-Training_React/static/css/main.df477f49.chunk.css.map",
+    "static/js/2.2b1f54c3.chunk.js.LICENSE.txt": "/FrontEnd-Training_React/static/js/2.2b1f54c3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9bd5ca4.js",
-    "static/js/2.bbe16808.chunk.js",
-    "static/css/main.bcefd9e4.chunk.css",
-    "static/js/main.2e8ee88c.chunk.js"
+    "static/js/runtime-main.96d23b81.js",
+    "static/js/2.2b1f54c3.chunk.js",
+    "static/css/main.df477f49.chunk.css",
+    "static/js/main.d9d05d9e.chunk.js"
   ]
 }
